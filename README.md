@@ -3,6 +3,9 @@
 
 This project builds an end-to-end loan default prediction model to classify whether a loan will be Fully Paid or Charged Off using borrower financial and credit attributes. The goal is to identify key risk drivers and compare multiple machine learning models using robust evaluation metrics.
 
+## Dataset:
+https://www.kaggle.com/datasets/wordsforthewise/lending-club
+
 ## The project covers the complete analytics workflow:
 
 Data preparation and cleaning
