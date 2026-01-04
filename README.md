@@ -103,7 +103,7 @@ Fixed random seed for reproducibility
 
 All models were tuned using GridSearchCV with ROC-AUC as the primary metric.
 
-Models evaluated:
+* Models evaluated:
 
 Logistic Regression
 
@@ -113,7 +113,7 @@ Gradient Boosting
 
 XGBoost
 
-Each model was evaluated using:
+* Each model was evaluated using:
 
 Accuracy
 
