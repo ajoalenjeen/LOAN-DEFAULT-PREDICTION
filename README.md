@@ -24,80 +24,77 @@ EDA was conducted to understand default behavior across borrower and loan charac
 
 Key analyses include:
 
-Loan status distribution
+* Loan status distribution
 
 Default rates by:
 
-Loan grade and sub-grade
+* Loan grade and sub-grade
 
-Loan term (36 vs 60 months)
+* Loan term (36 vs 60 months)
 
-Home ownership
+* Home ownership
 
-Verification status
+* Verification status
 
-Employment length
+* Employment length
 
-Loan purpose
+* Loan purpose
 
-FICO score bands
+* FICO score bands
 
-Debt-to-Income (DTI) bands
+* Debt-to-Income (DTI) bands
 
-Income bands
+* Income bands
 
 Key findings:
 
-Default rates increase as FICO score decreases
+* Default rates increase as FICO score decreases
 
-Higher DTI and lower income bands show elevated default risk
+* Higher DTI and lower income bands show elevated default risk
 
 ## Feature Engineering & Preprocessing
 
-Removed redundant and low-correlation features (|corr| < 0.03)
+* Removed redundant and low-correlation features (|corr| < 0.03)
 
-Dropped high-cardinality identifiers (id, emp_title, title, zip_code)
+* Dropped high-cardinality identifiers (id, emp_title, title, zip_code)
 
-Converted loan term to numeric values
+* Converted loan term to numeric values
 
-Extracted year from earliest_cr_line
+* Extracted year from earliest_cr_line
 
-Log-transformed income (log_annual_inc)
+* Log-transformed income (log_annual_inc)
 
-Created loan amount to installment ratio
+* Created loan amount to installment ratio
 
-Label-encoded categorical variables
+* Label-encoded categorical variables
 
-Applied mean imputation for missing values
+* Applied mean imputation for missing values
 
 Final modeling dataset:
 
-27 features + target
+* 27 features + target
 
-Fully numeric and model-ready
-Riskier loan purposes (e.g., small business, medical) have higher default rates
+* Fully numeric and model-ready
 
-Employment length shows minimal variation and was removed
+* Riskier loan purposes (e.g., small business, medical) have higher default rates
+
+* Employment length shows minimal variation and was removed
 
 
 ## Modeling Approach
-Class Balancing
+* Class Balancing
 
-To address class imbalance, undersampling was applied:
+* To address class imbalance, undersampling was applied:
 
-10,000 defaulted loans
+* 10,000 defaulted loans
 
-10,000 non-defaulted loans
+* 10,000 non-defaulted loans
 
-Final balanced dataset: 20,000 observations
+* Final balanced dataset: 20,000 observations
 
-Train/Test Split
+* Train/Test Split (80% training set, 20% testing set)
 
-80% training set
-
-20% testing set
-
-Fixed random seed for reproducibility
+* Fixed random seed for reproducibility
 
 ## Models Trained
 
