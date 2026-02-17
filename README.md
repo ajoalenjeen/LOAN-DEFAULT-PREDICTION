@@ -23,6 +23,20 @@ https://www.kaggle.com/datasets/wordsforthewise/lending-club
 
 * The dataset showed class imbalance: ~80% Fully Paid  ,  ~20% Charged Off
 
+
+2. Data Preprocessing and Cleaning
+
+* Columns such as id, emp_title, title, zip_code were dropped due to extremely high uniqueness and low predictive value, which could lead to overfitting.
+
+* Handling Missing Values
+
+  * Features with >1,000,000 missing values were removed.
+
+  * Remaining missing numerical values were imputed using column means (for modeling subset).
+
+  * Certain categorical fields were encoded after ensuring no null values remained.
+
+
 ## The project covers the complete analytics workflow:
 
 Data preparation and cleaning
