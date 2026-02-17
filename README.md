@@ -7,7 +7,7 @@ This project builds an end-to-end loan default prediction model to classify whet
 https://www.kaggle.com/datasets/wordsforthewise/lending-club
 
 ## Methodology and Steps Taken
-1. Data Loading and Initial Inspection
+#### 1. Data Loading and Initial Inspection
 
 * The LendingClub accepted loans dataset was loaded into a Pandas DataFrame.
 
@@ -24,7 +24,7 @@ https://www.kaggle.com/datasets/wordsforthewise/lending-club
 * The dataset showed class imbalance: ~80% Fully Paid  ,  ~20% Charged Off
 
 
-2. Data Preprocessing and Cleaning
+#### 2. Data Preprocessing and Cleaning
 
 * Columns such as id, emp_title, title, zip_code were dropped due to extremely high uniqueness and low predictive value, which could lead to overfitting.
 
