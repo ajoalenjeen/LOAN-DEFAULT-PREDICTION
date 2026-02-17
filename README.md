@@ -13,11 +13,11 @@ https://www.kaggle.com/datasets/wordsforthewise/lending-club
 
 * Initial inspection revealed:
 
-      * ~1.3 million completed loan records (Fully Paid / Charged Off)
+  * ~1.3 million completed loan records (Fully Paid / Charged Off)
 
-      * Multiple borrower, credit, and loan-level attributes
+  * Multiple borrower, credit, and loan-level attributes
 
-      * Significant missingness in certain hardship and joint application fields
+  * Significant missingness in certain hardship and joint application fields
 
 * A binary target variable default_flag was created: 1 → Charged Off ,  0 → Fully Paid
 
