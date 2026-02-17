@@ -19,17 +19,9 @@ Initial inspection revealed:
 
  * Significant missingness in certain hardship and joint application fields
 
-The target variable loan_status was filtered to include only:
-
- * Fully Paid
-
- * Charged Off
-
 A binary target variable default_flag was created:
 
- * 1 → Charged Off
-
- * 0 → Fully Paid
+ * 1 → Charged Off   * 0 → Fully Paid
 
 The dataset showed class imbalance:
 
