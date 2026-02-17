@@ -6,6 +6,37 @@ This project builds an end-to-end loan default prediction model to classify whet
 ## Dataset:
 https://www.kaggle.com/datasets/wordsforthewise/lending-club
 
+## Methodology and Steps Taken
+1. Data Loading and Initial Inspection
+
+The LendingClub accepted loans dataset was loaded into a Pandas DataFrame.
+
+Initial inspection revealed:
+
+~1.3 million completed loan records (Fully Paid / Charged Off)
+
+Multiple borrower, credit, and loan-level attributes
+
+Significant missingness in certain hardship and joint application fields
+
+The target variable loan_status was filtered to include only:
+
+Fully Paid
+
+Charged Off
+
+A binary target variable default_flag was created:
+
+1 → Charged Off
+
+0 → Fully Paid
+
+The dataset showed class imbalance:
+
+~80% Fully Paid
+
+~20% Charged Off
+
 ## The project covers the complete analytics workflow:
 
 Data preparation and cleaning
