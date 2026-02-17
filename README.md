@@ -13,29 +13,29 @@ The LendingClub accepted loans dataset was loaded into a Pandas DataFrame.
 
 Initial inspection revealed:
 
-~1.3 million completed loan records (Fully Paid / Charged Off)
+ * ~1.3 million completed loan records (Fully Paid / Charged Off)
 
-Multiple borrower, credit, and loan-level attributes
+ * Multiple borrower, credit, and loan-level attributes
 
-Significant missingness in certain hardship and joint application fields
+ * Significant missingness in certain hardship and joint application fields
 
 The target variable loan_status was filtered to include only:
 
-Fully Paid
+ * Fully Paid
 
-Charged Off
+ * Charged Off
 
 A binary target variable default_flag was created:
 
-1 → Charged Off
+ * 1 → Charged Off
 
-0 → Fully Paid
+ * 0 → Fully Paid
 
 The dataset showed class imbalance:
 
-~80% Fully Paid
+ * ~80% Fully Paid
 
-~20% Charged Off
+ * ~20% Charged Off
 
 ## The project covers the complete analytics workflow:
 
