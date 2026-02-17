@@ -7,7 +7,7 @@ This project builds an end-to-end loan default prediction model to classify whet
 https://www.kaggle.com/datasets/wordsforthewise/lending-club
 
 ## Methodology and Steps Taken
-#### 1. Data Loading and Initial Inspection
+### 1. Data Loading and Initial Inspection
 
 * The LendingClub accepted loans dataset was loaded into a Pandas DataFrame.
 
@@ -19,12 +19,13 @@ https://www.kaggle.com/datasets/wordsforthewise/lending-club
 
   * Significant missingness in certain hardship and joint application fields
 
-* A binary target variable default_flag was created: 1 → Charged Off ,  0 → Fully Paid
+* A binary target variable default_flag was created : 1 → Charged Off ,  0 → Fully Paid
 
-* The dataset showed class imbalance: ~80% Fully Paid  ,  ~20% Charged Off
+* The dataset showed class imbalance : ~80% Fully Paid  ,  ~20% Charged Off
 
+* Features with correlation < 0.03 were removed to Reduce noise, Improve model efficiency, Avoid unnecessary dimensionality
 
-#### 2. Data Preprocessing and Cleaning
+### 2. Data Preprocessing and Cleaning
 
 * Columns such as id, emp_title, title, zip_code were dropped due to extremely high uniqueness and low predictive value, which could lead to overfitting.
 
@@ -36,6 +37,23 @@ https://www.kaggle.com/datasets/wordsforthewise/lending-club
 
   * Certain categorical fields were encoded after ensuring no null values remained.
 
+### 3. Exploratory Data Analysis (EDA)
+
+Several visualizations and grouped analyses were conducted to understand default patterns:
+
+* Loan Grade : Default risk increases steadily from Grade A to Grade G, validating LendingClub’s risk grading system.
+
+* Loan Term : 60-month loans exhibit higher default likelihood than 36-month loans.
+
+* Loan Purpose : Highest default rates observed in Small Business, Renewable Energy, Moving, Medical, Debt Consolidation
+
+* An inverse relationship was observed : Higher FICO → Lower default rate
+
+* Default probability increases significantly as DTI moves from : Very Low → Very High
+
+* Income : Higher income bands show progressively lower default rates.
+
+* Credit History Indicators : Public records and bankruptcies are associated with higher default probability.
 
 ## The project covers the complete analytics workflow:
 
