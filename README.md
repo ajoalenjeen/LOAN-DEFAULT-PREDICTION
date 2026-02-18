@@ -84,7 +84,7 @@ Combined and shuffled to form a 20,000-row balanced dataset
  
 Hyperparameters were tuned to optimize performance.
 
-### 6. Model Evaluation
+## Model Evaluation
 
 | Model                 | CV ROC-AUC |
 | --------------------- | ---------- |
