@@ -55,6 +55,43 @@ Several visualizations and grouped analyses were conducted to understand default
 
 * Credit History Indicators : Public records and bankruptcies are associated with higher default probability.
 
+### 5. Class Imbalance Handling
+
+* Since the dataset was imbalanced (~80/20), a balanced training dataset was created:
+
+  * 10,000 Fully Paid loans
+
+  * 10,000 Charged Off loans
+
+Combined and shuffled to form a 20,000-row balanced dataset
+
+### 6. Model Training:
+
+* The dataset was split into training (80%) and testing (20%) sets.
+
+* Four models were trained using GridSearchCV (3-fold cross-validation) with ROC-AUC scoring:
+
+  * Logistic Regression
+
+  * Random Forest
+
+  * Gradient Boosting
+
+  * XGBoost
+ 
+Hyperparameters were tuned to optimize performance.
+
+### 8. Model Evaluation
+
+| Model                 | CV ROC-AUC |
+| --------------------- | ---------- |
+| **Gradient Boosting** | **0.9479** |
+| XGBoost               | 0.9467     |
+| Logistic Regression   | 0.9283     |
+| Random Forest         | 0.9225     |
+
+Gradient Boosting achieved the best overall performance with strong generalization on unseen data.
+
 ## The project covers the complete analytics workflow:
 
 Data preparation and cleaning
