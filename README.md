@@ -3,7 +3,7 @@
 
 This project focuses on building a machine learning model to predict loan approval status based on various applicant and loan-related features. The goal is to assist financial institutions in making informed decisions regarding loan applications, thereby reducing risk and improving efficiency in the loan approval process.
 
-* Dataset link [here](https://www.kaggle.com/datasets/wordsforthewise/lending-club)
+Dataset link [here](https://www.kaggle.com/datasets/wordsforthewise/lending-club)
 
 ## Problem Statement
 
