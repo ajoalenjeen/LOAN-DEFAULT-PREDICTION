@@ -34,17 +34,22 @@ Note: The dataset is too large for GitHub. See How to Run for download instructi
 
 ## ▶ How to Run
 
-### 1. Clone the repo
-git clone https://github.com/ajoalenjeen/LOAN_DEFAULT_PREDICTION.git
-cd LOAN_DEFAULT_PREDICTION
+1. Clone repo: [LOAN_DEFAULT_PREDICTION](https://github.com/ajoalenjeen/LOAN_DEFAULT_PREDICTION)
 
-### 2. Create virtual environment and install dependencies
+2. Create virtual env and install requirements:
+```bash
 python -m venv venv
-
-# Activate the environment
 source venv/bin/activate        # macOS / Linux
 venv\Scripts\activate           # Windows
+pip install -r requirements.txt
+```
 
+3. Download dataset from [Kaggle: LendingClub Accepted Loans](https://www.kaggle.com/datasets/wordsforthewise/lending-club) and place in `data/` folder
+
+4. Run the notebook:
+```bash
+jupyter lab notebooks/loan_default_prediction.ipynb
+```
 # Install required packages
 pip install -r requirements.txt
 
