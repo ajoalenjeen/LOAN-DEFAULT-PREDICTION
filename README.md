@@ -32,3 +32,21 @@ Note: The dataset is too large for GitHub. See How to Run for download instructi
 * Logistic Regression: ROC-AUC ≈ 0.93 | Accuracy ≈ 88% (Recall ≈ 0.61)
 
 
+## ▶ How to Run
+
+### 1. Clone the repo
+git clone https://github.com/ajoalenjeen/LOAN_DEFAULT_PREDICTION.git
+cd LOAN_DEFAULT_PREDICTION
+
+### 2. Create virtual environment and install dependencies
+python -m venv venv
+
+# Activate the environment
+source venv/bin/activate        # macOS / Linux
+venv\Scripts\activate           # Windows
+
+# Install required packages
+pip install -r requirements.txt
+
+### 3. Run the notebook
+jupyter lab notebooks/loan_default_prediction.ipynb
