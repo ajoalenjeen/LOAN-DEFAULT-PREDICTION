@@ -67,6 +67,10 @@ pip install -r requirements.txt
 ```
 
 ## Author
-Author: Ajo Alen Jeen.
-Github: https://github.com/ajoalenjeen.
-Linkedin: https://www.linkedin.com/in/ajoalenjeen/.
+Author: Ajo Alen Jeen
+Github: https://github.com/ajoalenjeen
+Linkedin: https://www.linkedin.com/in/ajoalenjeen/
+
+## 👤 Author
+
+**Ajo Alen Jeen** — [GitHub](https://github.com/ajoalenjeen) · [LinkedIn](https://www.linkedin.com/in/ajoalenjeen/)
