@@ -7,7 +7,9 @@ Target Variable: loan_status → Binary: Default (Charged Off) vs Fully Paid
 ## Dataset
 
 Source: LendingClub Accepted Loans (2007–2018 Q4)
+
 Size: ~2.2 million rows, 150 columns (raw)
+
 Note: The dataset is too large for GitHub. See How to Run for download instructions.
 
 ## What I Did
